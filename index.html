@@ -95,7 +95,23 @@
             <h1 class="title is-1 publication-title">H2RBench: A Real-to-Sim Benchmark for Evaluating Human-to-Robot Transfer</h1>
 
             <div class="is-size-5 publication-authors" style="margin-top: 14px;">
-              <span class="author-block">Anonymous Authors</span>
+              <span class="author-block">Chuyang Xiao<sup>1,*</sup>,</span>
+              <span class="author-block">Haotian Zhan<sup>1,*</sup>,</span>
+              <span class="author-block">Sriram Krishna<sup>1</sup>,</span>
+              <span class="author-block">Peilin Meng<sup>2</sup>,</span>
+              <span class="author-block">Muhammad Zubair Irshad<sup>3</sup>,</span>
+              <span class="author-block">Sergey Zakharov<sup>3</sup>,</span>
+              <span class="author-block">David Held<sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Robotics Institute, Carnegie Mellon University</span>
+              <span class="author-block"><sup>2</sup>University of Michigan</span>
+              <span class="author-block"><sup>3</sup>Toyota Research Institute</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal contribution</span>
             </div>
 
             <div class="is-size-5 publication-authors">
@@ -498,38 +514,38 @@
               <tbody>
                 <tr>
                   <td>Phantom</td>
-                  <td>76.7</td><td>56.7</td>
-                  <td>79.2</td><td>33.3</td>
-                  <td>40.8</td><td>3.3</td>
-                  <td><u>36.7</u></td><td><u>10.0</u></td>
+                  <td>77.0</td><td>56.7</td>
+                  <td>75.6</td><td>25.6</td>
+                  <td><u>39.2</u></td><td><u>7.8</u></td>
+                  <td><u>37.8</u></td><td><u>13.3</u></td>
                 </tr>
                 <tr>
                   <td>AMPLIFY</td>
-                  <td>71.1</td><td>53.3</td>
-                  <td><strong>94.2</strong></td><td><strong>83.3</strong></td>
-                  <td>41.7</td><td>3.3</td>
-                  <td>12.2</td><td>0.0</td>
+                  <td>74.4</td><td>58.9</td>
+                  <td><u>85.3</u></td><td><u>61.1</u></td>
+                  <td>35.0</td><td>2.2</td>
+                  <td>8.1</td><td>0.0</td>
                 </tr>
                 <tr>
                   <td>Point Policy</td>
-                  <td><u>88.9</u></td><td><u>73.3</u></td>
-                  <td>88.3</td><td>80.0</td>
-                  <td><u>45.0</u></td><td><u>20.0</u></td>
-                  <td>16.7</td><td>0.0</td>
+                  <td><u>82.6</u></td><td><u>62.2</u></td>
+                  <td>79.7</td><td>61.1</td>
+                  <td>37.8</td><td>6.7</td>
+                  <td>17.4</td><td>0.0</td>
                 </tr>
                 <tr class="ghost-row">
                   <td>GHOST</td>
-                  <td><strong>96.7</strong></td><td><strong>90.0</strong></td>
-                  <td><u>90.0</u></td><td><u>80.0</u></td>
-                  <td><strong>65.0</strong></td><td><strong>40.0</strong></td>
-                  <td><strong>71.1</strong></td><td><strong>53.3</strong></td>
+                  <td><strong>91.1</strong></td><td><strong>82.2</strong></td>
+                  <td><strong>88.9</strong></td><td><strong>76.7</strong></td>
+                  <td><strong>64.7</strong></td><td><strong>34.5</strong></td>
+                  <td><strong>63.3</strong></td><td><strong>38.9</strong></td>
                 </tr>
               </tbody>
             </table>
             <p style="font-size:0.85em; color:#666; text-align:center;">
               Best per column is <strong>bold</strong>; second-best is <u>underlined</u>.
               Prog. = average task progression; SR = final-stage success rate.
-              Results under full human supervision.
+              Mean across random seeds, under robot + maximum human demonstration training.
             </p>
           </div>
 
@@ -542,7 +558,7 @@
 
           <div class="columns is-vcentered" style="margin-bottom: 1.5rem;">
             <div class="column has-text-centered">
-              <img src="static/images/comparison_robotonly_withhuman/h2r_panel_A.png"
+              <img src="static/images/comparison_robotonly_withhuman/h2r_panel_A_seeds.png"
                    alt="Absolute performance comparison" width="100%"
                    style="border-radius:6px; border:1px solid #eee;" />
               <p style="font-size:0.85em; color:#555; margin-top:6px;">
@@ -550,7 +566,7 @@
               </p>
             </div>
             <div class="column has-text-centered">
-              <img src="static/images/comparison_robotonly_withhuman/h2r_panel_B.png"
+              <img src="static/images/comparison_robotonly_withhuman/h2r_panel_B_seeds.png"
                    alt="Log-odds transfer gain" width="100%"
                    style="border-radius:6px; border:1px solid #eee;" />
               <p style="font-size:0.85em; color:#555; margin-top:6px;">
@@ -571,7 +587,7 @@
           </p>
 
           <div class="has-text-centered" style="margin-bottom:2rem;">
-            <img src="static/images/scaling_curves_uniform_y.png"
+            <img src="static/images/scaling_curves_seeds.png"
                  alt="Scaling curves" width="100%"
                  style="max-width:860px; border-radius:6px; border:1px solid #eee;" />
             <p style="font-size:0.85em; color:#555; margin-top:8px;">
