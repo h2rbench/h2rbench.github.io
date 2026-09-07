@@ -5,3 +5,7 @@
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Raw/unencoded video sources too large for git (>100MB GitHub limit)
+static/videos/H2RBench_new.mp4
+static/videos/intro_old_backup.mp4
